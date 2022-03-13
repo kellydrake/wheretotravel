@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="a multiple choice quiz that generates your next favorite travel destination">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="destination_picker.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet">
+    <title>Your Next Travel Destination</title>
+</head>
+<body>
+<!--navbar-->
+<header>
+    <nav class="navbar">
+        <ul class="nav-items">
+            <li><a href="#" title="Home">Home</a></li>
+            <li><a href="#" title="About the content creater">About</a></li>
+            <li><a href="#" title="Travel inspiration">Travel Inspiration</a></li>
+            <li><a href="#" title="Contact us">Contact</a></li>
+        </ul>
+        <button class="menu-button" aria-label="mobile menu">
+        <span class="material-icons-outlined" id="menu-icon">menu</span>
+        </button>
+    </nav>
+</header>
+<!--homepage hero-->
+
+<main>
+    <div class="hero-container">
+        <h1>Your Next Travel Destination</h1>
+        <p>Don't know where you'd like to travel to next? Take this 5 question multiple-choice quiz to find out where your next preferred destination will be!</p>
+    </div>
+
+<!--first question-->
+
+<section>
+    <form name="quiz" id="quiz">
+    <div class="container">
+        <div id="question-container">
+            <div id="question">1. What does your ideal destination look like? </div>
+            <div class="answer-buttons">
+               <a href="#question2"><button>A. On the beach<img src="ocean.PNG" alt="the ocean at sunset"></button></a>
+               <a href="#question2"><button>B. Surrounded by mountains
+                <img src="hiking.PNG" alt="a person hiking in the mountains"></button></a>
+                <a href="#question2"><button>C. Big city life with shopping
+                <img src="shopping.PNG" alt="people walking the street in a city"></button></a>
+                <a href="#question2"><button>D. A little bit of everything<img src="allabove.png" alt="the beach, the city shopping life, and hiking in the mountains">
+                </button></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--second question-->
+
+<section>
+    <div class="container">
+        <div id="question-container">
+            <div id="question2"></div>
+            <div id="question">2. What does your budget look like?</div>
+            <div class="answer-buttons">
+                <a href="#question3"><button>A. Let's travel in luxury<img src="luxury.png" alt="a fancy hotel with a pool and palm trees"></button></a>
+                <a href="#question3"><button>B. All about that frugal life<img src="frugal.png" alt="someone planning travel with a map"></button></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--third question-->
+
+<section>
+    <div class="container">
+        <div id="question-container">
+            <div id="question3"></div>
+            <div id="question">3. How far are you willing to travel?</div>
+            <div class="answer-buttons">
+                <a href="#question4"><button>A. Let's stay in the states<img src="states.png" alt="map of the united states"></button></a>
+                <a href="#question4"><button>B. Let's go international<img src="international.png" alt="a globe of the world"></button></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--fourth question-->
+
+<section>
+    <div class="container">
+        <div id="question-container">
+            <div id="question4"></div>
+            <div id="question">4. What kind of weather would you like to experience?</div>
+            <div class="answer-buttons">
+                <a href="#question5"><button>A. Beautiful winter snow<img src="snow.png" alt="trees covered in snow"></button>
+                <a href="#question5"><button>B. Sun, sun, sun<img src="sun.png" alt="grass and trees in the sun"></button></a>
+                <a href="#question5"><button>C. Some rain is nice<img src="rain.png" alt="someone under an umbrella in the rain"></button></a>
+                <a href="#question5"><button>D. Any of the four seasons<img src="fourseasons.png" alt="the four seasons"></button></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--fifth question-->
+
+<section>
+    <div class="container">
+        <div id="question-container">
+            <div id="question5"></div>
+            <div id="question">5. Why do you want to travel?</div>
+            <div class="answer-buttons">
+                <button>A. To relax and recharge<img src="relax.png" alt="someone relaxing on a hammock outside"></button>
+                <button>B. To learn about different cultures<img src="culture.png" alt="beautiful culture decorations"></button>
+                <button>C. To embark on an adventure<img src="adventure.png" alt="someone standing on the edge of a mountain overlooking a beautiful landscape"></button>
+                <button>D. To indulge in delicious cuisine<img src="cuisine.png" alt="bowls of different cuisine and spices"></button>
+            </div>
+        </div>
+    </div>
+</form>
+</section>
+</main>
+
+<!--footer section-->
+
+<footer>
+</footer>
+
+<script src="dest_picker.js"></script>
+</body>
+</html>
+

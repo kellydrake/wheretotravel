@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kaisei HarunoUmi', serif;
+    text-decoration: none;
+}
+html{
+    background: linear-gradient(to right bottom, #243B55, #141E30);
+    min-height: 100%;
+}
+
+/*nav bar*/
+header{
+    display: flex;
+    padding: 10px 20px;
+    justify-content: center;
+}
+.navbar{
+    height: 25px;
+}
+.nav-items li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0 30px;
+}
+.nav-items li a{
+    color: #DBE5FF;
+    font-weight: 800;
+    transition: all 500ms ease-in-out;
+}
+.nav-items li a:hover{
+    text-decoration: underline;
+    color: #FDE24D;
+    text-shadow:2px 3px 5px rgba(0,0,0,0.5);
+}
+.material-icons-outlined, .menu-button{
+    visibility: hidden;
+}
+
+/*hero banner*/
+h1{
+    color: #FDE24D;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+.hero-container{
+    padding: 20px 40px;
+    text-align: center;
+}
+.hero-container p{
+    color: #DBE5FF;
+    margin: 0 30px;
+    font-size: 1.25rem;
+}
+
+/*multiple choice questions*/
+.container{
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+}
+#question-container{
+    border: 2px solid #243B55;
+    border-radius: 5px;
+    box-shadow: 0 0 8px 2px;
+    width: 100%;
+    overflow: hidden;
+}
+#question{
+    color: #FDE24D;
+    font-size: 1.25rem;
+    text-align: center;
+    padding: 10px;
+}
+.answer-buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 15px;
+}
+.answer-buttons img{
+    width: 300px;
+}
+button{
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1.15rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 30px;
+}
+button:hover{
+    transform: scale(1.1);
+    transition-duration: .5s;
+}
+@media screen and (max-width: 1000px) and (min-width: 631px){
+    .answer-buttons img{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 630px){
+   header{
+    padding: 10px;
+    justify-content: flex-end;
+    z-index: 1;
+   }
+   .material-icons-outlined{
+    visibility: visible;
+    color: #DBE5FF;
+    z-index: 999;
+   }
+   #menu-icon{
+    font-size: 30px;
+   }
+   .menu-button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+   }
+    .nav-items{
+    position: fixed;
+    left: -100%;
+    height: 100%;
+    top: 4em;
+    width: 100%;
+    background: linear-gradient(to right bottom, #243B55, #141E30);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.5em;
+    font-size: 1.25rem;
+}
+    .nav-items.active{
+    left: 0;
+}
+    .hero-container{
+    padding: 15px 10px;
+   }
+   .answer-buttons{
+       display: flex;
+       flex-direction: column;
+   }
+}
